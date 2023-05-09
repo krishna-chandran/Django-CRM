@@ -1,0 +1,40 @@
+<h1>Our Cab Rates</h1>
+</br>
+<p>Service only in Tamilnadu, Bangalore & Tirupati</p>
+
+<form method="POST" action="{% url 'home' %}">
+    {%csrf_token %}
+    <form>
+        <div class="mb-3">
+        <input type="text" class="form-control" aria-describedby="emailHelp" name="pickup_location", placeholder="Pickup Location" required>
+        </div>
+        </br>
+        <div class="mb-3">
+        <input type="password" class="form-control" name="dropoff_location", placeholder="Dropoff Location" required>
+        </div>
+        </br>
+        <p>Car Type</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              4 Seater
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              6 Seater
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              12 Seater
+            </label>
+          </div>
+          <br/>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248756.13130946862!2d80.04420261966607!3d13.047473319036506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1683651244636!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <button type="submit" class="btn btn-secondary">Book Now</button>
+    </form>
+    <br/>
+</form> 

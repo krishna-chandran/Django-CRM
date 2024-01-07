@@ -37,4 +37,4 @@ jobs:
     steps:
     - name: Deploy to Production
       run: |
-          python manage.py runserver
+         python $(find | grep CRM/manage.py$ ) runserver
